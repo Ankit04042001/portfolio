@@ -1,0 +1,44 @@
+@use './base.sass'
+
+.project
+    position: relative
+    margin-bottom: 20px
+
+    .thumbnail
+        width: 100%
+
+        img
+            display: block
+            width: 100%
+            aspect-ratio: 4/3
+            border-radius: 10px
+
+        .outer-layer
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            color: #fff
+            background-color: rgba(0, 0, 0, 0.8)
+            border-radius: 10px
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+
+            @include base.desktop
+                background-color: transparent
+                color: transparent
+
+                &:hover
+                    background-color: rgba(0, 0, 0, 0.8)
+                    color: #fff
+
+            p
+                padding: 20px
+                text-align: center
+                text-decoration: none
+
+                .launch-icon
+                    color: #00bcd4

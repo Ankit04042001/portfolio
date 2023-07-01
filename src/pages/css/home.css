@@ -1,0 +1,127 @@
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.home h1 {
+  padding: 0;
+  padding-top: 200px;
+  height: 100vh;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  font-family: "Agdasima", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.home h1 span {
+  color: #00bcd4;
+}
+@media (min-width: 1080px) {
+  .home h1 {
+    margin: 0;
+    padding-top: 200px;
+    padding-right: 100px;
+    height: 100vh;
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    text-align: right;
+  }
+}
+
+/****************************** About Section ********************************/
+.about h2 {
+  margin: 20px auto;
+  padding: 5px 0px;
+  width: fit-content;
+  border-bottom: 2px solid #00bcd4;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.about .about-me {
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .about .about-me {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.about .about-me .left img {
+  display: block;
+  margin: 10px auto;
+  width: 40%;
+  height: auto;
+  border: 0.5px solid #00bcd4;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 0.5px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  .about .about-me .left img {
+    width: 60%;
+  }
+}
+.about .about-me .right .btn-primary {
+  width: 100%;
+  background-color: #00bcd4;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .about .about-me .right .btn-primary {
+    width: fit-content;
+  }
+}
+.about .about-me .right .btn-primary .download-icon {
+  margin: 0 2px;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .about .about-me .right {
+    padding: 20px 30px;
+  }
+}
+.about .education h3 {
+  margin: 20px auto;
+  padding: 5px 0px;
+  width: fit-content;
+  border-bottom: 2px solid #00bcd4;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.about .skills h3 {
+  margin: 20px auto;
+  padding: 5px 0px;
+  width: fit-content;
+  border-bottom: 2px solid #00bcd4;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.work h2 {
+  margin: 20px auto;
+  padding: 5px 0px;
+  width: fit-content;
+  border-bottom: 2px solid #00bcd4;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.contact h2 {
+  margin: 20px auto;
+  padding: 5px 0px;
+  width: fit-content;
+  border-bottom: 2px solid #00bcd4;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.contact .other-contacts {
+  margin: 40px 0px;
+}
+.contact .other-contacts .call, .contact .other-contacts .email {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=home.css.map */

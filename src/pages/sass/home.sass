@@ -1,0 +1,140 @@
+@use './base.sass'
+
+.container
+    @include base.tablet
+        width: 80%
+
+.home
+    h1
+        padding: 0
+        padding-top: 200px
+        height: 100vh
+        font-size: 2.4rem
+        letter-spacing: 2px
+        line-height: 3rem
+        font-family: 'Agdasima', sans-serif
+        font-weight: 700
+        color: #fff
+        text-align: center
+
+        span
+            color: #00bcd4
+
+        @include base.desktop
+            margin: 0
+            padding-top: 200px
+            padding-right: 100px
+            height: 100vh
+            font-size: 3.5rem
+            line-height: 4.2rem
+            text-align: right
+
+/****************************** About Section ********************************/
+
+.about
+    h2
+        margin: 20px auto
+        padding: 5px 0px
+        width: fit-content
+        border-bottom: 2px solid #00bcd4
+        font-size: 1.8rem
+        font-weight: 500
+
+    .about-me
+        margin: 0px 0px 20px 0px
+        width: 100%
+
+        @include base.tablet
+            display: flex
+            justify-content: space-around
+
+        .left
+
+            img
+                display: block
+                margin: 10px auto
+                width: 40%
+                height: auto
+                border: 0.5px solid #00bcd4
+                border-radius: 50%
+                box-shadow: 0px 0px 8px 0.5px rgba(0, 0, 0, 0.5)
+
+                @include base.tablet
+                    width: 60%
+
+        .right
+            .btn-primary
+                width : 100%
+                background-color: #00bcd4
+                font-weight: 400
+
+                @include base.tablet 
+                    width : fit-content
+                .download-icon
+                    margin : 0 2px
+                    color : #fff
+
+            @include base.tablet
+                padding: 20px 30px
+
+    // .contact
+    //     .left
+    //         h3
+    //             margin : 20px auto
+    //             padding : 5px 0px
+    //             width : fit-content
+    //             border-bottom : 2px solid #00bcd4
+    //             font-size : 1.8rem
+    //             font-weight : 500
+
+    //     .right 
+    //         .btn-primary
+    //             width : 100%
+    //             background-color: #00bcd4
+    //             font-weight: 400
+
+    //             .download-icon
+    //                 margin : 0 2px
+    //                 color : #fff
+
+    .education
+        h3
+            margin: 20px auto
+            padding: 5px 0px
+            width: fit-content
+            border-bottom: 2px solid #00bcd4
+            font-size: 1.8rem
+            font-weight: 500
+
+    .skills
+        h3
+            margin: 20px auto
+            padding: 5px 0px
+            width: fit-content
+            border-bottom: 2px solid #00bcd4
+            font-size: 1.8rem
+            font-weight: 500
+
+.work
+    h2
+        margin: 20px auto
+        padding: 5px 0px
+        width: fit-content
+        border-bottom: 2px solid #00bcd4
+        font-size: 1.8rem
+        font-weight: 500
+
+.contact
+    h2
+        margin: 20px auto
+        padding: 5px 0px
+        width: fit-content
+        border-bottom: 2px solid #00bcd4
+        font-size: 1.8rem
+        font-weight: 500
+
+    .other-contacts
+        margin: 40px 0px
+
+        .call, .email
+            margin-bottom: 20px
