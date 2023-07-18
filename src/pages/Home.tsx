@@ -54,7 +54,7 @@ function Home() {
               contribute to impactful projects and grow as a
               professional in this ever-evolving field
             </p>
-            <a className='btn btn-primary' download='resume.pdf'><span className='download-icon'><FileDownloadIcon /></span>Download Resume</a>
+            <a className='btn btn-primary' href='/resume.pdf' download='resume.pdf'><span className='download-icon'><FileDownloadIcon /></span>Download Resume</a>
           </div>
         </div>
         {/* <div className='contact'>
@@ -92,9 +92,9 @@ function Home() {
         <h2>Works</h2>
         <p>Checkout Some of My Work.</p>
         <div className='project-wrapper row'>
-          <Project projectLink='#' thumbnail={travel} projectName='Travel' projectTitle='A Fully Responsive and Dynamic Website for Travel developed using React and Django.' />
+          <Project projectLink='https://travel-6095f.web.app/' thumbnail={travel} projectName='Travel' projectTitle='A Fully Responsive and Dynamic Website for Travel developed using React and Django.' />
           <Project projectLink='#' thumbnail={portfolio} projectName='Portfolio' projectTitle='A Fully Responsive and Static Website for Portfolio developed using React.' />
-          <Project projectLink='#' thumbnail={webGallery} projectName='Web Gallery' projectTitle='A Fully Responsive and Static Mini WebPage for Web Gallery developed using Html, CSS and Javascript only.' />
+          <Project projectLink='https://ankit04042001.github.io/web-gallery/' thumbnail={webGallery} projectName='Web Gallery' projectTitle='A Fully Responsive and Static Mini WebPage for Web Gallery developed using Html, CSS and Javascript only.' />
         </div>
       </section>
 
