@@ -54,7 +54,7 @@ function Home() {
               contribute to impactful projects and grow as a
               professional in this ever-evolving field
             </p>
-            <a className='btn btn-primary' href='/resume.pdf' download='resume.pdf'><span className='download-icon'><FileDownloadIcon /></span>Download Resume</a>
+            <a className='btn btn-primary' href={process.env.PUBLIC_URL + '/resume.pdf'} download='resume.pdf'><span className='download-icon'><FileDownloadIcon /></span>Download Resume</a>
           </div>
         </div>
         {/* <div className='contact'>
