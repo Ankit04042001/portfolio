@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './css/home.css'
 import { Background } from '../components/Background'
 import Header from '../components/Header'
@@ -15,9 +15,37 @@ import profileImage from '../images/profile-photo.jpeg'
 import webGallery from '../images/webGallery.png'
 import portfolio from '../images/portfolio.jpg'
 import travel from '../images/travel.png'
+import emailjs from '@emailjs/browser'
 
 function Home() {
   const typedEl = useRef(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  
+  const template_id : string  = process.env.REACT_APP_TEMPLATE_ID as string;
+  const user_id : string  = process.env.REACT_APP_USER_ID as string;
+  const key : string = process.env.REACT_APP_KEY as string;
+
+  const data = {
+    name : name,
+    email : email,
+    subject : subject,
+    message : message    
+  }
+
+  const handleSubmit = (e:any) => {
+    e.preventDefault()
+
+    emailjs.send(user_id, template_id, data, key)
+      .then((result) => {
+        alert("Message Sent, We will get back to you shortly " + result.text);
+      },
+        (error) => {
+          alert("An error occurred, Please try again " + error.text);
+        });
+  };
 
   useEffect(() => {
     const typed = new Typed(typedEl.current, {
@@ -101,22 +129,22 @@ function Home() {
       <section className='contact container' id='contact'>
         <div className='container'>
           <h2>Message Me</h2>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="name">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" />
+              <Form.Control type="text" onChange={(e)=>(setName(e.target.value))} required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email Id</Form.Label>
-              <Form.Control type="email" />
+              <Form.Control type="email"  onChange={(e)=>setEmail(e.target.value)} required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="subject">
               <Form.Label>Subject</Form.Label>
-              <Form.Control type="text" />
+              <Form.Control type="text" onChange={(e)=>setSubject(e.target.value)} required/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="message">
               <Form.Label>Enter Your Message</Form.Label>
-              <Form.Control type="textarea" />
+              <Form.Control as="textarea" rows={5} onChange={(e)=>setMessage(e.target.value)} required/>
             </Form.Group>
             <Button variant='primary' type='submit' className='w-100'>Submit</Button>
           </Form>
