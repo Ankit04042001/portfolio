@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './css/header.css'
+import {Link} from 'react-scroll'
 
 function Header() {
     const [expand, setExpand] = useState('sm')
@@ -31,10 +32,10 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#about">About</Nav.Link>
-                  <Nav.Link href="#works">Works</Nav.Link>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
+                  <Link activeClass="active" to="home" onClick={()=>setExpanded(false)}>Home</Link>
+                  <Link activeClass="active" to='about' onClick={()=>setExpanded(false)}>About</Link>
+                  <Link activeClass="active" to="works" onClick={()=>setExpanded(false)}>Works</Link>
+                  <Link activeClass="active" to="contact"  onClick={()=>setExpanded(false)}>Contact</Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
