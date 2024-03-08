@@ -14,7 +14,7 @@ import Button from 'react-bootstrap/Button'
 import profileImage from '../images/profile-photo.jpeg'
 import webGallery from '../images/webGallery.png'
 import portfolio from '../images/portfolio.jpg'
-import travel from '../images/travel.png'
+import amazon_website from '../images/amazon_website.png'
 import emailjs from '@emailjs/browser'
 
 function Home() {
@@ -120,7 +120,7 @@ function Home() {
         <h2>Works</h2>
         <p>Checkout Some of My Work.</p>
         <div className='project-wrapper row'>
-          <Project projectLink='https://travel-6095f.web.app/' thumbnail={travel} projectName='Travel' projectTitle='A Fully Responsive and Dynamic Website for Travel developed using React and Django.' />
+          <Project projectLink='https://next-amazon-clone-nai8.vercel.app/' thumbnail={amazon_website} projectName='Amazon Clone Website' projectTitle='A Fully Responsive website built in Next.js, a react framework and having authentication functionality Of oAuth, add to cart functionality etc.' />
           <Project projectLink='#' thumbnail={portfolio} projectName='Portfolio' projectTitle='A Fully Responsive and Static Website for Portfolio developed using React.' />
           <Project projectLink='https://ankit04042001.github.io/web-gallery/' thumbnail={webGallery} projectName='Web Gallery' projectTitle='A Fully Responsive and Static Mini WebPage for Web Gallery developed using Html, CSS and Javascript only.' />
         </div>
