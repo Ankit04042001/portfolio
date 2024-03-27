@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9eaa1852.css",
-    "main.js": "/portfolio/static/js/main.46035321.js",
+    "main.js": "/portfolio/static/js/main.1f8daa7c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/webGallery.png": "/portfolio/static/media/webGallery.79b9b118c412a1cfeb01.png",
     "static/media/amazon_website.png": "/portfolio/static/media/amazon_website.81e1d5b32e7836c3a8e2.png",
+    "static/media/nolanAI-clone.png": "/portfolio/static/media/nolanAI-clone.4193fff5189314807a10.png",
     "static/media/profile-photo.jpeg": "/portfolio/static/media/profile-photo.58972f7d119a99b5f302.jpeg",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.e12fab390b942d359fb0.jpg",
     "static/media/transparent3-removebg-preview.png": "/portfolio/static/media/transparent3-removebg-preview.20c863a80bb8cedd9565.png",
     "index.html": "/portfolio/index.html",
     "main.9eaa1852.css.map": "/portfolio/static/css/main.9eaa1852.css.map",
-    "main.46035321.js.map": "/portfolio/static/js/main.46035321.js.map",
+    "main.1f8daa7c.js.map": "/portfolio/static/js/main.1f8daa7c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9eaa1852.css",
-    "static/js/main.46035321.js"
+    "static/js/main.1f8daa7c.js"
   ]
 }
